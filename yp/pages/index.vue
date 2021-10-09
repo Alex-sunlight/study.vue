@@ -1,10 +1,13 @@
 <template>
   <div>
-    <div id="butt">
-      <img src="~/static/tup.jpg" class="ppp" />
-    </div>
+    <img src="~/static/tup.jpg" class="ppp" />
+
     <div id="buttt">
       <button class="but" @click="bindXXX">{{ a }}</button>
+    </div>
+    <div class="left-1">
+      <div>信息</div>
+      <div>通讯录</div>
     </div>
   </div>
 </template>
@@ -13,7 +16,7 @@ import Vue from 'vue'
 export default Vue.extend({
   data() {
     return {
-      a: '弹窗',
+      a: '登录',
     }
   },
   head: {
@@ -55,21 +58,34 @@ export default Vue.extend({
 </script>
 <style>
 .but {
+  width: 50px;
+  height: 50px;
+  margin-top: 25px;
   background: red;
 }
-#butt {
-  margin-top: 10%;
-  display: flex;
-  justify-content: center;
-}
+
 #buttt {
-  margin-top: 30%;
+  height: 100px;
+  width: 761px;
+  right: 0%;
+
   display: flex;
   justify-content: center;
   background: yellow;
+  position: absolute;
+  top: 808px;
 }
 .ppp {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 100px;
+}
+.left-1 {
+  background: rgb(99, 97, 97);
+  width: 150px;
+  height: 900px;
 }
 </style>
