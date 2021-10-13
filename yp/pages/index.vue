@@ -6,10 +6,14 @@
       <div class="left-1">
         <div>信息</div>
         <div>通讯录</div>
+        <div>设置</div>
       </div>
     </div>
     <div id="buttt">
       <button class="but" @click="bindXXX">{{ a }}</button>
+    </div>
+    <div class="buttondi">
+      <div class="neirong">微信登录页面</div>
     </div>
   </div>
 </template>
@@ -88,5 +92,17 @@ export default Vue.extend({
   background: rgb(99, 97, 97);
   width: 150px;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.buttondi {
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  min-height: 10vh;
+}
+.neirong {
+  flex: 1;
 }
 </style>
