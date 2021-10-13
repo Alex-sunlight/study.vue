@@ -1,13 +1,15 @@
 <template>
   <div>
-    <img src="~/static/tup.jpg" class="ppp" />
+    <div>
+      <img src="~/static/tup.jpg" class="ppp" />
 
+      <div class="left-1">
+        <div>信息</div>
+        <div>通讯录</div>
+      </div>
+    </div>
     <div id="buttt">
       <button class="but" @click="bindXXX">{{ a }}</button>
-    </div>
-    <div class="left-1">
-      <div>信息</div>
-      <div>通讯录</div>
     </div>
   </div>
 </template>
@@ -66,14 +68,13 @@ export default Vue.extend({
 
 #buttt {
   height: 100px;
-  width: 761px;
+  left: 160px;
   right: 0%;
-
   display: flex;
   justify-content: center;
   background: yellow;
   position: absolute;
-  top: 808px;
+  top: 630px;
 }
 .ppp {
   width: 100px;
@@ -86,6 +87,6 @@ export default Vue.extend({
 .left-1 {
   background: rgb(99, 97, 97);
   width: 150px;
-  height: 900px;
+  height: 100vh;
 }
 </style>
